@@ -1,0 +1,9 @@
+[sprint] Es el nombre que recibe cada ciclo o iteracion de desarrollo dentro de un proyecto, generalmente de 1 a 4 semanas.
+[product owner] El Product Owner asegura que el equipo Scrum trabaje de acuerdo con los objetivos del negocio y gestiona el Product Backlog.
+[scrum master] Es el facilitador del equipo, encargado de remover impedimentos y asegurar que se sigan los procesos y valores de Scrum.
+[product backlog] Es la lista priorizada de todas las funcionalidades, requisitos y mejoras necesarias para el producto.
+[sprint backlog] Es el conjunto de elementos del Product Backlog seleccionados para ser completados durante el Sprint actual.
+[burndown chart] Representacion grafica del trabajo por hacer en un proyecto a lo largo del tiempo.
+[daily scrum] Reunion diaria de 15 minutos donde el equipo sincroniza actividades y detecta posibles bloqueos.
+[sprint review] Reunion al final del Sprint donde se muestra el incremento de software terminado a las partes interesadas.
+[sprint retrospective] Reunion del equipo al final del Sprint para reflexionar sobre el proceso e identificar mejoras continuas.
