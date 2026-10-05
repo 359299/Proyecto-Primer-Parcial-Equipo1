@@ -185,7 +185,29 @@ agregar_info() {
 
 # 5.2 Buscar información (Usar Regex)
 buscar_info() {
+    local archivo=$1
+    echo "--- BUSCAR INFORMACIÓN ---"
+    read -p "Ingrese el concepto a buscar: " concepto_buscar
+    
+    if [ ! -f "$archivo" ]; then
+        echo "No hay información registrada aún."
+        read -p "Presione Enter para continuar..."
+        return
+    fi
 
+    # Regex para encontrar [concepto] exacto
+    # El patrón busca: [texto_buscar] seguido de espacio y .-
+    patron="\[${concepto_buscar}\]"
+    
+    resultado=$(grep -i "$patron" "$archivo")
+    
+    if [ -n "$resultado" ]; then
+        echo "Resultado encontrado:"
+        echo "$resultado"
+    else
+        echo "El concepto '${concepto_buscar}' no existe en la base de datos."
+    fi
+    read -p "Presione Enter para continuar..."
 }
 
 # 5.3 Eliminar información
