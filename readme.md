@@ -18,7 +18,7 @@
 | **Docente** | Mtro. Luis Antonio Ramírez Martínez |
 | **Actividad** | Proyecto del Primer Parcial: Guía interactiva de metodologías |
 | **Integrantes** | Rafael Eduardo Acosta Navarro (374272), Carlos Esteban Barragán Bernal (359299), Giovanna Paulina Hernández Mendoza (377284), Mario Mendoza Anchondo (374296) |
-| **Fecha de entrega** | Jueves, 8 de Octubre de 2026|
+| **Fecha de entrega** | Jueves, 8 de octubre de 2026|
 
 ## Descripción
 
