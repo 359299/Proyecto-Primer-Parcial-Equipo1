@@ -67,3 +67,13 @@ cd Proyecto-Primer-Parcial-Equipo1
 
 # 3. (Opcional) Si deseas construir la imagen Docker localmente
 docker build -t guia-metodologias:v1 .
+
+```
+## Instalación alternativa por medio de Docker
+
+```bash
+# 1. Ejecuta este comando
+docker pull a374272/guia-metodologias:v1
+
+# 2. Ejecuta este comando
+docker run a374272/guia-metodologias:v1
