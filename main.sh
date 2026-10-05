@@ -73,7 +73,49 @@ ejecutar_con_parametros() {
 
 # --- SELECCIÓN DE MÉTODOLOGÍA ---
 ejecutar_modulo() {
+local categoria=$1
+    local metodo=""
+    local archivo_inf=""
+    
+    # Mapeo de categorías a opciones
+    if [ "$categoria" == "agile" ]; then
+        echo "Usted está en la sección Metodologías Ágiles"
+        echo "1. SCRUM"
+        echo "2. XP (Programación Extrema)"
+        echo "3. Kanban"
+        echo "4. Crystal"
+        echo "0. Volver al menú principal"
+        read -p "Seleccione una metodología: " opt_metodo
+        
+        case $opt_metodo in
+            1) metodo="scrum"; archivo_inf="scrum.inf" ;;
+            2) metodo="xp"; archivo_inf="xp.inf" ;;
+            3) metodo="kanban"; archivo_inf="kanban.inf" ;;
+            4) metodo="crystal"; archivo_inf="crystal.inf" ;;
+            0) menu_principal ;;
+            *) echo "Opción inválida."; read; ejecutar_modulo "$categoria" ;;
+        esac
+    elif [ "$categoria" == "tradicional" ]; then
+        echo "Usted está en la sección Metodologías Tradicionales"
+        echo "1. Cascada"
+        echo "2. Espiral"
+        echo "3. Modelo V"
+        echo "0. Volver al menú principal"
+        read -p "Seleccione una metodología: " opt_metodo
+        
+        case $opt_metodo in
+            1) metodo="cascada"; archivo_inf="cascada.inf" ;;
+            2) metodo="espiral"; archivo_inf="espiral.inf" ;;
+            3) metodo="modelo-v"; archivo_inf="modelo-v.inf" ;;
+            0) menu_principal ;;
+            *) echo "Opción inválida."; read; ejecutar_modulo "$categoria" ;;
+        esac
+    fi
 
+    # Si se seleccionó una metodología válida, pasar al submenú de operaciones
+    if [ -n "$metodo" ]; then
+        sub_menu_operaciones "$metodo" "$archivo_inf"
+    fi
 }
 
 # --- SUBMENÚ DE OPERACIONES ---
