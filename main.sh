@@ -212,7 +212,27 @@ buscar_info() {
 
 # 5.3 Eliminar información
 eliminar_info() {
+    local archivo=$1
+    echo "--- ELIMINAR INFORMACIÓN ---"
+    read -p "Ingrese el concepto a eliminar: " concepto_eliminar
+    
+    if [ ! -f "$archivo" ]; then
+        echo "No hay información registrada."
+        read -p "Presione Enter para continuar..."
+        return
+    fi
 
+    patron="\[${concepto_eliminar}\]"
+    
+    if grep -q "$patron" "$archivo"; then
+        # Crear archivo temporal, filtrar la línea y reemplazar el original
+        # grep -v invierte la búsqueda (excluye la línea que coincide)
+        grep -v "$patron" "$archivo" > "${archivo}.tmp" && mv "${archivo}.tmp" "$archivo"
+        echo "Concepto eliminado correctamente."
+    else
+        echo "El concepto no fue encontrado."
+    fi
+    read -p "Presione Enter para continuar..."
 }
 
 # 5.4 Leer base de información
