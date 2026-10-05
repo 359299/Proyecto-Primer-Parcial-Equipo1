@@ -77,3 +77,4 @@ docker pull a374272/guia-metodologias:v1
 
 # 2. Ejecuta este comando
 docker run a374272/guia-metodologias:v1
+```
