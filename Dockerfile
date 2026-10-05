@@ -15,6 +15,9 @@ WORKDIR /app
 # Copiar el script de la aplicación
 COPY main.sh /app/main.sh
 
+# Copiar archivos .inf de la aplicación
+COPY *.inf /app/
+
 # Dar permisos de ejecución al script (¡CRUCIAL!)
 # IMPORTANTE
 # SI LA LINEA DE ABAJO SE COMENTA ENTONCES EL PROGRAMA PODRÍA NO FUNCIONAR
