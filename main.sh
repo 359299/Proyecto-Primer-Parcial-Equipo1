@@ -120,7 +120,43 @@ local categoria=$1
 
 # --- SUBMENÚ DE OPERACIONES ---
 sub_menu_operaciones() {
+local metodo=$1
+    local archivo=$2
+    
+    while true; do
+        limpiar_pantalla
+        echo "=========================================="
+        echo "   SECCIÓN: ${metodo^^} (Archivo: $archivo)"
+        echo "=========================================="
+        echo "1. Agregar información"
+        echo "2. Buscar información"
+        echo "3. Eliminar información"
+        echo "4. Leer base de información"
+        echo "5. Volver al menú anterior"
+        echo "0. Salir de la aplicación"
+        echo "=========================================="
+        read -p "Seleccione una opción: " accion
 
+        case $accion in
+            1) agregar_info "$archivo" ;;
+            2) buscar_info "$archivo" ;;
+            3) eliminar_info "$archivo" ;;
+            4) leer_info "$archivo" ;;
+            5) break ;; # Rompe el loop y vuelve a ejecutar_modulo
+            0) echo "Saliendo..."; exit 0 ;;
+            *) echo "Opción no válida."; sleep 1 ;;
+        esac
+    done
+    
+    # Si salió del loop, volver al menú de selección de metodología
+    # Nota: Aquí necesitamos saber la categoría original. 
+    # Para simplificar en este esqueleto, asumimos que si sale, vuelve al inicio.
+    # En una versión más robusta, pasaríamos 'categoria' como argumento extra.
+    if [ "$metodo" == "scrum" ] || [ "$metodo" == "xp" ] || [ "$metodo" == "kanban" ] || [ "$metodo" == "crystal" ]; then
+        ejecutar_modulo "agile"
+    else
+        ejecutar_modulo "tradicional"
+    fi
 }
 
 # ==============================================================================
