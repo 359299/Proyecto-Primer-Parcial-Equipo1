@@ -16,6 +16,8 @@ WORKDIR /app
 COPY main.sh /app/main.sh
 
 # Dar permisos de ejecución al script (¡CRUCIAL!)
+# IMPORTANTE
+# SI LA LINEA DE ABAJO SE COMENTA ENTONCES EL PROGRAMA PODRÍA NO FUNCIONAR
 RUN chmod +x /app/main.sh
 
 # Comando que se ejecuta automáticamente al iniciar el contenedor
