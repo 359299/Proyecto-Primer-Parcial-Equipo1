@@ -1,0 +1,13 @@
+[cascada] .- Metodología tradicional de desarrollo de software en la que el proyecto avanza de manera secuencial por diferentes etapas.
+[modelo cascada] .- Modelo de desarrollo que organiza el proyecto en fases consecutivas donde cada fase debe completarse antes de iniciar la siguiente.
+[requisitos] .- Fase en la que se identifican y documentan las necesidades y características que debe cumplir el sistema.
+[analisis] .- Etapa en la que se estudian los requisitos para determinar cómo se desarrollará la solución.
+[diseno] .- Fase donde se establece la estructura, arquitectura y componentes que tendrá el sistema.
+[implementacion] .- Etapa en la que se desarrolla y programa el software de acuerdo con el diseño establecido.
+[pruebas] .- Fase en la que se verifica que el software funcione correctamente y cumpla con los requisitos establecidos.
+[implementacion y pruebas] .- Etapas donde el sistema se construye y posteriormente se comprueba para detectar errores.
+[mantenimiento] .- Etapa posterior a la entrega en la que se corrigen errores y se realizan modificaciones o mejoras al software.
+[documentacion] .- Registro de los requisitos, diseño, funcionamiento y demás información relacionada con el proyecto.
+[secuencial] .- Característica del modelo Cascada que indica que las fases se realizan siguiendo un orden determinado.
+[ventaja] .- Una ventaja del modelo Cascada es que sus fases están claramente definidas y facilitan la documentación del proyecto.
+[desventaja] .- Una desventaja del modelo Cascada es que los cambios en los requisitos pueden ser difíciles de incorporar una vez iniciadas las etapas posteriores.
