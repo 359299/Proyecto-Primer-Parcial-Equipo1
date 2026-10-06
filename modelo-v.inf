@@ -1,0 +1,45 @@
+[modelo v] .- Metodología de desarrollo de software que organiza el proyecto en fases secuenciales y relaciona cada etapa de desarrollo con una etapa específica de pruebas.
+
+[modelo en v] .- Modelo de desarrollo que representa las actividades del proyecto en forma de V, mostrando la relación entre las fases de desarrollo y las fases de verificación y validación.
+
+[requisitos] .- Fase en la que se identifican y documentan las necesidades y funcionalidades que debe cumplir el sistema.
+
+[analisis de requisitos] .- Etapa en la que se estudian las necesidades del usuario para establecer las características que tendrá el software.
+
+[diseno del sistema] .- Fase en la que se define la estructura general, arquitectura y funcionamiento del sistema.
+
+[diseno detallado] .- Etapa en la que se especifican con mayor precisión los componentes, módulos y funciones que formarán parte del software.
+
+[implementacion] .- Fase en la que se desarrolla y programa el sistema de acuerdo con los diseños establecidos.
+
+[pruebas unitarias] .- Pruebas realizadas sobre componentes individuales del software para comprobar que funcionan correctamente.
+
+[pruebas de integracion] .- Pruebas que verifican que los diferentes módulos o componentes del sistema funcionen correctamente al trabajar juntos.
+
+[pruebas de sistema] .- Pruebas realizadas sobre el sistema completo para comprobar que cumple con los requisitos establecidos.
+
+[pruebas de aceptacion] .- Pruebas realizadas para verificar que el sistema satisface las necesidades y expectativas del usuario o cliente.
+
+[verificacion] .- Proceso que permite comprobar que cada etapa del desarrollo se realiza correctamente de acuerdo con las especificaciones establecidas.
+
+[validacion] .- Proceso que permite comprobar que el producto desarrollado cumple con las necesidades y expectativas del usuario.
+
+[fase de desarrollo] .- Etapa en la que se analizan los requisitos, se diseña el sistema y se construyen sus componentes.
+
+[fase de pruebas] .- Etapa en la que se realizan diferentes tipos de pruebas para comprobar la calidad y funcionamiento del software.
+
+[correspondencia de fases] .- Característica del modelo V que relaciona cada fase de desarrollo con un tipo específico de prueba.
+
+[calidad] .- Característica que busca garantizar que el software funcione correctamente y cumpla con los requisitos definidos.
+
+[ventaja] .- Una ventaja del modelo V es que establece pruebas asociadas a cada etapa del desarrollo, facilitando la detección temprana de errores.
+
+[desventaja] .- Una desventaja del modelo V es que los cambios en los requisitos pueden ser difíciles de incorporar una vez iniciado el desarrollo.
+
+[documentacion] .- Registro de los requisitos, diseños, resultados de pruebas y demás información generada durante el desarrollo del proyecto.
+
+[proceso secuencial] .- Forma de trabajo en la que las diferentes fases del proyecto se realizan siguiendo un orden establecido.
+
+[control de calidad] .- Conjunto de actividades destinadas a verificar que el software cumpla con los estándares y requisitos establecidos.
+
+[aplicacion] .- El modelo V puede utilizarse en proyectos donde los requisitos están bien definidos y se necesita un proceso de pruebas y validación claramente estructurado.
