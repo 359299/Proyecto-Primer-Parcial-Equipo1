@@ -87,9 +87,9 @@ local categoria=$1
         read -p "Seleccione una metodología: " opt_metodo
         
         case $opt_metodo in
-            1) metodo="scrum"; archivo_inf="scrum.inf" ;;
-            2) metodo="xp"; archivo_inf="xp.inf" ;;
-            3) metodo="kanban"; archivo_inf="kanban.inf" ;;
+            1) metodo="scrum"; archivo_inf="${DATA_DIR}/scrum.inf" ;;
+            2) metodo="xp"; archivo_inf="${DATA_DIR}/xp.inf" ;;
+            3) metodo="kanban"; archivo_inf="${DATA_DIR}/kanban.inf" ;;
             4) metodo="crystal"; archivo_inf="crystal.inf" ;;
             0) menu_principal ;;
             *) echo "Opción inválida."; read; ejecutar_modulo "$categoria" ;;
@@ -103,9 +103,9 @@ local categoria=$1
         read -p "Seleccione una metodología: " opt_metodo
         
         case $opt_metodo in
-            1) metodo="cascada"; archivo_inf="cascada.inf" ;;
-            2) metodo="espiral"; archivo_inf="espiral.inf" ;;
-            3) metodo="modelo-v"; archivo_inf="modelo-v.inf" ;;
+            1) metodo="cascada"; archivo_inf="${DATA_DIR}/cascada.inf" ;;
+            2) metodo="espiral"; archivo_inf="${DATA_DIR}/espiral.inf" ;;
+            3) metodo="modelo-v"; archivo_inf="${DATA_DIR}/modelo-v.inf" ;;
             0) menu_principal ;;
             *) echo "Opción inválida."; read; ejecutar_modulo "$categoria" ;;
         esac
