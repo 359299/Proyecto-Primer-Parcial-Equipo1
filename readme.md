@@ -1,6 +1,6 @@
 # Guía Interactiva de Metodologías de Desarrollo de Software
 
-# <!--
+<!--
 
 PROYECTO: PRIMER PARCIAL - DESARROLLO BASADO EN PLATAFORMAS
 UNIVERSIDAD AUTÓNOMA DE CHIHUAHUA - FACULTAD DE INGENIERÍA
