@@ -80,3 +80,22 @@ docker pull a374272/guia-metodologias:v2
 # 2. Ejecuta este comando
 docker run -it a374272/guia-metodologias:v2
 ```
+
+---
+
+## Declaración de Uso de Herramientas de Inteligencia Artificial
+
+En la elaboración de este proyecto se utilizaron las siguientes herramientas de IA:
+
+| Herramienta | Versión   | Uso                                                                                                           |
+| ----------- | --------- | ------------------------------------------------------------------------------------------------------------- |
+| **Lumo**    | 2.0 Max   | Análisis inicial del proyecto para entender requisitos y procedimientos, asi como lógica inicial del programa |
+| **Lumo**    | 2.0 Lite  | Correcciones generales de código y Docker                                                                     |
+| **Claude**  | Haiku 4.5 | Verificación de cumplimiento de la rúbrica                                                                    |
+| **ChatGPT** | GPT-5.6   | Ayuda con comandos de la terminal de sistema Unix                                                             |
+
+**Declaración obligatoria:** Todo el contenido y código del proyecto han sido revisados, comprendidos y validados por los integrantes del equipo antes de su entrega, asegurando que cumple con los objetivos de la actividad académica y los estándares de integridad establecidos por la Universidad Autónoma de Chihuahua.
+
+**Responsabilidad del estudiante:** El uso de estas herramientas fue únicamente como apoyo en el proceso de desarrollo. Los estudiantes asumen total responsabilidad por el contenido presentado y garantizan que el trabajo cumple con los principios de honestidad académica.
+
+---
