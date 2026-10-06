@@ -90,7 +90,7 @@ local categoria=$1
             1) metodo="scrum"; archivo_inf="${DATA_DIR}/scrum.inf" ;;
             2) metodo="xp"; archivo_inf="${DATA_DIR}/xp.inf" ;;
             3) metodo="kanban"; archivo_inf="${DATA_DIR}/kanban.inf" ;;
-            4) metodo="crystal"; archivo_inf="crystal.inf" ;;
+            4) metodo="crystal"; archivo_inf="${DATA_DIR}/crystal.inf" ;;
             0) menu_principal ;;
             *) echo "Opción inválida."; read; ejecutar_modulo "$categoria" ;;
         esac
