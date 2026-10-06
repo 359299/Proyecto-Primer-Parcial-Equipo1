@@ -19,7 +19,7 @@ COPY main.sh /app/main.sh
 WORKDIR /app/Metodologias
 
 # Copiar archivos .inf de la aplicación
-COPY *.inf /app/Metodologias/
+COPY Metodologias/ *.inf /app/Metodologias/
 
 # Dar permisos de ejecución al script (¡CRUCIAL!)
 # IMPORTANTE
