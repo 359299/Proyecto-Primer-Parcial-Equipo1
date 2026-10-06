@@ -26,5 +26,8 @@ COPY *.inf /app/Metodologias/
 # SI LA LINEA DE ABAJO SE COMENTA ENTONCES EL PROGRAMA PODRÍA NO FUNCIONAR
 RUN chmod +x /app/main.sh
 
+# Cambio de directorio
+WORKDIR /app
+
 # Comando que se ejecuta automáticamente al iniciar el contenedor
 CMD ["./main.sh"]
