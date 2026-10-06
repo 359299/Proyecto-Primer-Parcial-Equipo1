@@ -13,8 +13,7 @@
 # --- CONFIGURACIÓN INICIAL ---
 # El Integrante 4 o quien gestione Docker puede ajustar esto si es necesario
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DATA_DIR="${SCRIPT_DIR}/data" # Carpeta opcional para .inf, o usar ruta relativa directa
-
+DATA_DIR="${SCRIPT_DIR}/Metodologias"
 # ==============================================================================
 # FUNCIONES DE UTILIDAD (Compartidas)
 # ==============================================================================
