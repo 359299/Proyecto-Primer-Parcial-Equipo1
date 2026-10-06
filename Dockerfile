@@ -15,8 +15,11 @@ WORKDIR /app
 # Copiar el script de la aplicación
 COPY main.sh /app/main.sh
 
+# Crear directorio de los archivos .inf
+WORKDIR /app/Metodologias
+
 # Copiar archivos .inf de la aplicación
-COPY *.inf /app/
+COPY *.inf /app/Metodologias/
 
 # Dar permisos de ejecución al script (¡CRUCIAL!)
 # IMPORTANTE
