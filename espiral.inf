@@ -1,0 +1,41 @@
+[espiral] .- Metodología de desarrollo de software basada en ciclos o iteraciones que combina elementos del modelo Cascada con la evaluación continua de riesgos.
+
+[modelo espiral] .- Modelo de desarrollo que organiza el proyecto en ciclos repetitivos, permitiendo analizar, diseñar, desarrollar y evaluar el sistema de manera progresiva.
+
+[ciclo] .- Cada vuelta de la espiral representa una etapa de desarrollo en la que se realizan actividades para avanzar en la construcción del software.
+
+[iteracion] .- Periodo de desarrollo en el que se trabaja sobre una parte del sistema y se obtiene información para mejorar las siguientes etapas.
+
+[riesgo] .- Posible problema o situación que puede afectar el costo, tiempo, calidad o funcionamiento del proyecto.
+
+[analisis de riesgos] .- Actividad que permite identificar, evaluar y reducir los posibles riesgos antes de continuar con el desarrollo.
+
+[planificacion] .- Etapa en la que se establecen los objetivos, necesidades, recursos, actividades y tiempos necesarios para realizar el siguiente ciclo.
+
+[requisitos] .- Características y necesidades que debe cumplir el sistema y que pueden ser revisadas o modificadas durante las diferentes iteraciones.
+
+[prototipo] .- Versión inicial o simplificada de una parte del sistema que permite evaluar ideas, requisitos o posibles soluciones antes del desarrollo completo.
+
+[desarrollo] .- Actividad en la que se construye o implementa la solución definida durante el ciclo correspondiente.
+
+[evaluacion] .- Proceso mediante el cual se revisan los resultados obtenidos y se determina si se cumplen los objetivos establecidos.
+
+[cliente] .- Persona o grupo que proporciona necesidades, comentarios y retroalimentación sobre el sistema durante las diferentes etapas del proyecto.
+
+[retroalimentacion] .- Información proporcionada por el cliente o los usuarios que permite identificar cambios, errores o mejoras necesarias en el sistema.
+
+[ventaja] .- Una ventaja del modelo Espiral es que permite identificar y controlar riesgos desde las primeras etapas del desarrollo.
+
+[desventaja] .- Una desventaja del modelo Espiral es que puede requerir más tiempo, recursos y experiencia para realizar correctamente el análisis de riesgos.
+
+[flexibilidad] .- Capacidad del modelo Espiral para incorporar cambios en los requisitos y adaptar el desarrollo conforme avanza el proyecto.
+
+[gestion de riesgos] .- Proceso continuo de identificación, análisis y control de los riesgos que pueden afectar el desarrollo del software.
+
+[objetivos] .- Resultados que se buscan alcanzar durante cada ciclo de la espiral para avanzar progresivamente en el desarrollo del sistema.
+
+[modelo iterativo] .- Enfoque de desarrollo en el que el sistema se construye mediante ciclos repetidos que permiten mejorar progresivamente el producto.
+
+[mejora continua] .- Proceso de realizar ajustes y mejoras al sistema a partir de los resultados y conocimientos obtenidos en cada ciclo.
+
+[aplicacion] .- El modelo Espiral es especialmente útil en proyectos grandes, complejos o con un nivel elevado de incertidumbre y riesgo.
