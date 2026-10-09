@@ -22,6 +22,14 @@ limpiar_pantalla() {
     clear
 }
 
+# Quita espacios al inicio y al final
+recortar() {
+    local texto="$1"
+    texto="${texto#"${texto%%[![:space:]]*}"}"
+    texto="${texto%"${texto##*[![:space:]]}"}"
+    printf '%s' "$texto"
+}
+
 mostrar_bienvenida() {
     local tipo=$1
     if [ "$tipo" == "agile" ]; then
@@ -165,20 +173,62 @@ local metodo=$1
 # 5.1 Agregar información
 agregar_info() {
     local archivo=$1
+    local concepto definicion
+
     echo "--- AGREGAR INFORMACIÓN ---"
-    read -p "Ingrese el concepto: " concepto
-    read -p "Ingrese la definición: " definicion
-    
+
+    read -r -p "Ingrese el concepto: " concepto
+    concepto="$(recortar "$concepto")"
+
+    if [ -z "$concepto" ]; then
+        echo "Error: el concepto no puede estar vacío."
+        read -p "Presione Enter para continuar..."
+        return
+    fi
+
+    if [[ "$concepto" == *"["* || "$concepto" == *"]"* ]]; then
+        echo "Error: el concepto no puede contener corchetes [ ]."
+        read -p "Presione Enter para continuar..."
+        return
+    fi
+
+    read -r -p "Ingrese la definición: " definicion
+    definicion="$(recortar "$definicion")"
+
+    if [ -z "$definicion" ]; then
+        echo "Error: la definición no puede estar vacía."
+        read -p "Presione Enter para continuar..."
+        return
+    fi
+
+    # Asegurar punto final
+    [[ "$definicion" != *. ]] && definicion+="."
+
+    # Asegurar que exista el directorio y el archivo
+    if ! mkdir -p "$(dirname "$archivo")" || ! touch "$archivo"; then
+        echo "Error: no se pudo crear el archivo '$archivo'."
+        read -p "Presione Enter para continuar..."
+        return
+    fi
+
+    # Evitar duplicados (búsqueda literal, sin distinguir mayúsculas)
+    if grep -iqF -- "[${concepto}] .-" "$archivo"; then
+        echo "Error: el concepto '${concepto}' ya existe."
+        read -p "Presione Enter para continuar..."
+        return
+    fi
+
+    # Si la última línea no termina en salto de línea, agregarlo
+    if [ -s "$archivo" ] && [ -n "$(tail -c1 "$archivo")" ]; then
+        printf '\n' >> "$archivo"
+    fi
+
     # Formato requerido: [concepto] .- Definición.
-    local registro="[${concepto}] .- ${definicion}"
-    
-    # Asegurar que el archivo exista (crear vacío si no)
-    touch "$archivo"
-    
-    # Agregar al final
-    echo "$registro" >> "$archivo"
-    
-    echo "Información agregada correctamente."
+    if printf '[%s] .- %s\n' "$concepto" "$definicion" >> "$archivo"; then
+        echo "Información agregada correctamente."
+    else
+        echo "Error: no se pudo escribir en el archivo."
+    fi
     read -p "Presione Enter para continuar..."
 }
 
