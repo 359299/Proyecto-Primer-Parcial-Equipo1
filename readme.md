@@ -67,7 +67,7 @@ git clone https://github.com/359299/Proyecto-Primer-Parcial-Equipo1
 cd Proyecto-Primer-Parcial-Equipo1
 
 # 3. (Opcional) Si deseas construir la imagen Docker localmente
-docker build -t a374272/guia-metodologias:v2 .
+docker build -t a374272/guia-metodologias:v3 .
 
 ```
 
@@ -75,10 +75,10 @@ docker build -t a374272/guia-metodologias:v2 .
 
 ```bash
 # 1. Ejecuta este comando
-docker pull a374272/guia-metodologias:v2
+docker pull a374272/guia-metodologias:v3
 
 # 2. Ejecuta este comando
-docker run -it a374272/guia-metodologias:v2
+docker run -it a374272/guia-metodologias:v3
 ```
 
 ---
